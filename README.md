@@ -81,11 +81,16 @@ Key Insights:
 ---
 
 ## ▶️ How to Run the Project
-1. Clone the repository  
-```git clone https://github.com/your-username/Linear_Regression.git```
 
-2. Install required libraries  
-```pip install numpy pandas matplotlib scikit-learn```
+1. Clone the repository
+```text
+git clone https://github.com/your-username/Linear_Regression.git
+```
+
+2. Install required libraries
+```text
+pip install numpy pandas matplotlib scikit-learn
+```
 
 3. Open Linear_Regression.ipynb and run all cells sequentially  
 
