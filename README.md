@@ -1,111 +1,105 @@
-# 📊 Linear Regression on Housing Data
+# 📈 Linear Regression on Housing Dataset
 
-This project demonstrates the implementation of **Linear Regression** using Python to predict housing prices based on given features.
-It is a beginner-friendly machine learning project focused on understanding data preprocessing, model training, and evaluation.
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Linear%20Regression-orange)
+![Status](https://img.shields.io/badge/Status-Completed-success)
 
----
-
-## 📁 Project Structure
-
-```
-📦 Linear-Regression-Project
-├── 📄 Linear_Regression.ipynb   # Jupyter Notebook with full implementation
-├── 📄 housing.csv               # Dataset used for training & testing
-└── 📄 README.md                 # Project documentation
-```
+## 🔹 Project Overview
+This project implements Linear Regression using scikit-learn to predict house prices from a housing dataset.
+The notebook demonstrates the complete machine learning workflow, including data loading, preprocessing,
+model training, prediction, evaluation, and residual analysis.
 
 ---
 
-## 📌 Project Overview
-
-Linear Regression is a **supervised machine learning algorithm** used for predicting continuous values.
-
-In this project:
-
-* A housing dataset is used
-* Data is cleaned and analyzed
-* A linear regression model is trained
-* Predictions are made based on input features
-* Model performance is evaluated
+## 📂 Repository Contents
+Linear_Regression/
+│
+├── Linear_Regression.ipynb
+├── housing.csv
+└── README.md
 
 ---
 
-## 🧠 Concepts Covered
-
-* Data Loading & Exploration
-* Data Preprocessing
-* Feature Selection
-* Train-Test Split
-* Linear Regression Model
-* Model Evaluation
-* Visualization (optional)
+## 📊 Dataset
+- File: housing.csv
+- Type: Tabular housing data
+- Purpose: Used to train and evaluate a linear regression model for house price prediction
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Libraries & Tools Used
+- Python
+- NumPy
+- Pandas
+- Matplotlib
+- scikit-learn
 
-* **Python**
-* **Jupyter Notebook**
-* **NumPy**
-* **Pandas**
-* **Matplotlib / Seaborn**
-* **Scikit-learn**
+---
+
+## ⚙️ Project Workflow
+1. Load the housing dataset
+2. Perform train-test split
+3. Train a Linear Regression model
+4. Predict house prices on test data
+5. Evaluate model performance using R² Score
+6. Visualize residual distribution
+
+---
+
+## 📈 Model Evaluation
+
+R² Score: 0.6395768324695243
+
+Interpretation:
+The model explains approximately 64% of the variance in housing prices, which is a reasonable result
+for a baseline linear regression model on real-world data.
+
+---
+
+## 📉 Residual Analysis
+
+Residual Distribution:
+residuals = y_test - reg_pred
+plt.figure()
+plt.hist(residuals, bins=30)
+plt.xlabel("Residuals")
+plt.ylabel("Frequency")
+plt.title("Residual Distribution")
+plt.show()
+<img width="604" height="453" alt="image" src="https://github.com/user-attachments/assets/aa577494-9d42-459c-892a-c8d421ec3a9f" />
+
+Key Insights:
+- Residuals are approximately normally distributed
+- Indicates that linear regression assumptions are largely satisfied
+- Some skewness suggests potential improvement with advanced models
+
+---
+
+## 📌 Key Observations
+- Linear Regression provides a strong baseline model
+- Model performance can be improved using:
+  - Feature engineering
+  - Polynomial regression
+  - Regularization techniques (Ridge, Lasso)
+  - Tree-based or ensemble models
 
 ---
 
 ## ▶️ How to Run the Project
+1. Clone the repository
+git clone https://github.com/your-username/Linear_Regression.git
 
-1. **Clone the repository**
+2. Install required libraries
+pip install numpy pandas matplotlib scikit-learn
 
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   ```
-
-2. **Navigate to the project folder**
-
-   ```bash
-   cd your-repo-name
-   ```
-
-3. **Install required libraries**
-
-   ```bash
-   pip install numpy pandas matplotlib seaborn scikit-learn
-   ```
-
-4. **Run the Jupyter Notebook**
-
-   ```bash
-   jupyter notebook
-   ```
-
-   Open `Linear_Regression.ipynb` and run all cells.
+3. Open Linear_Regression.ipynb and run all cells sequentially
 
 ---
 
-## 📊 Dataset Information
-
-* **File:** `housing.csv`
-* **Description:** Contains housing-related features used to predict house prices.
-* **Target Variable:** House Price (or similar depending on dataset)
-
----
-
-## 📈 Output
-
-* Trained Linear Regression Model
-* Predicted values vs actual values
-* Visualization of regression line (if applicable)
+## 🚀 Future Enhancements
+- Add RMSE and MAE evaluation metrics
+- Experiment with Polynomial Regression
+- Apply feature scaling comparisons
+- Try regularized regression models
 
 ---
-
-## 🚀 Future Improvements
-
-* Add multiple regression
-* Feature scaling & normalization
-* Model comparison (Linear vs Ridge vs Lasso)
-* Convert notebook into a web app
-
----
-
-⭐ If you like this project, don’t forget to star the repository!
