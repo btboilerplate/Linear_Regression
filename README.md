@@ -84,7 +84,7 @@ Key Insights:
 
 1. Clone the repository
 ```text
-git clone https://github.com/your-username/Linear_Regression.git
+git clone https://github.com/btboilerplate/Linear_Regression.git
 ```
 
 2. Install required libraries
